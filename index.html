@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="indexstyle.css">
 </head>
 <body>
     <div id="navbar">
@@ -18,9 +18,9 @@
             </div>
             
             <div class="dropdown-content">
-                <a href="">Social</a>
-                <a href="">Economic</a>
-                <a href="">Environment</a>
+                <a href="./main.html">Social</a>
+                <a href="./shop.html">Economic</a>
+                <a href="./map.html">Environment</a>
             </div>
         </div> 
         <a href="#contact" class="nav-items">Contact</a>
@@ -30,20 +30,20 @@
 
     <div class="row">
         <div class="box">
-            <a href="">
+            <a href="./main.html">
                 <img class="boximage" src="./social img.webp" alt="images">
                 <p class="boxtitle">Social</p>
                 <p class="boxtext"></p><i></i></p>
             </a>
         </div>
         <div class="box">
-            <a href="">
+            <a href="./shop.html">
                 <img class="boximage" src="./economic img.jfif" alt="images">
                 <p class="boxtitle">Economic</p>
                 <p class="boxtext"><i></i></p>
             </a>
         </div><div class="box">
-            <a href="">
+            <a href="./map.html">
                 <img class="boximage" src="./envi img.jpg" alt="images">
                 <p class="boxtitle">Environment</p>
                 <p class="boxtext"><i></i></p>
@@ -58,15 +58,18 @@
 
     <div id="contact">
         <h2 class="contact-header">CONTACT</h2>
-        Georgia, US<br>
-        Phone: +00 000000<br>
-        Email: @mail.com<br>
-        <p class="contact-sub"><i>Do you have something you'd like to share with us?</i></p>
+        <p class="contact-text">
+            Georgia, US<br>
+            Phone: +00 000000<br>
+            Email: @mail.com<br>
+        </p>
         
-        <form action="/action_page.php" target="_blank" class="contact-form">
-        <input class="contact-input" type="text" placeholder="Name" required name="Name">
-        <input class="contact-input" type="text" placeholder="Email" required name="Email">
-        <input class="contact-input" type="text" placeholder="Message" required name="Message">
+        <p class="contact-sub"><i>Do you have something you'd like to share with us?</i></p><br>
+        
+        <form  target="_blank" class="contact-form">
+        <input class="contact-input" type="text" placeholder="Name" required name="Name"><br><br>
+        <input class="contact-input" type="text" placeholder="Email" required name="Email"><br><br>
+        <input class="contact-input" type="text" placeholder="Message" required name="Message"><br><br>
         <br>
         <button class="contact-button" type="submit">SEND</button>
         </form>

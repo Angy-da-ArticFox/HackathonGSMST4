@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Planner</title>
+    <link rel="stylesheet" href="map.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Building Route Planner</h1>
+        
+        <div class="form-group">
+            <label for="start">Starting Location:</label>
+            <select id="start">
+                <option value="front-door">Front Door</option>
+                <option value="cafeteria">Cafeteria</option>
+                <option value="mlh">MLH</option>
+                <option value="llh">LLH</option>
+                <option value="downstairs">Downstairs</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="destination">Destination:</label>
+            <select id="destination">
+                <option value="front-door">Front Door</option>
+                <option value="cafeteria">Cafeteria</option>
+                <option value="mlh">MLH</option>
+                <option value="llh">LLH</option>
+                <option value="downstairs">Downstairs</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Can you use the stairs?</label>
+            <input type="radio" id="stairs-yes" name="stairs" value="yes" checked>
+            <label for="stairs-yes">Yes</label>
+            <input type="radio" id="stairs-no" name="stairs" value="no">
+            <label for="stairs-no">No</label>
+        </div>
+
+        <button onclick="findRoute()">Find Route</button>
+
+        <p id="route-output"></p>
+    </div>
+
+    <script src="map.js"></script>
+</body>
+</html>
